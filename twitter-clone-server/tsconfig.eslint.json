@@ -1,0 +1,8 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "allowJs": true,
+    "module": "ES2020"
+  },
+  "include": ["src", ".*.js", "*.js", "./.eslintrc.cjs", "./jest.config.cjs"]
+}

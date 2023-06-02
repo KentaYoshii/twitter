@@ -1,0 +1,13 @@
+.DS_Store
+.env
+**/dist
+**/yarn-error.lock
+**/yarn-error.log
+/docker
+**/node_modules
+**/.vscode
+/data
+**/uploads
+/minio-data
+build/
+.env*

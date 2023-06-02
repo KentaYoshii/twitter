@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "outDir": "dist",
+    "strict": true,
+    "rootDir": "src",
+    "module": "CommonJS",
+    "sourceMap": true,
+    "moduleResolution": "node",
+    "moduleDetection": "auto",
+    "baseUrl": ".",
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowJs": false,
+  },
+  "include": ["src", "jest.config.cjs"],
+  "exclude": ["dist/**/*", "node_modules"]
+}
