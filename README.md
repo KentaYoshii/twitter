@@ -8,6 +8,7 @@
 - `Redis` is used to store clients' session information
 - `Google Open ID connect` is used for client authentication
 ![](./img/arch.png)
+![](./img/infra_arch.png)
 # Features
 - When first accessing, you are directed to login page
 ![](./img/Login.png)
@@ -117,3 +118,10 @@ yarn start [--c] [--d]
 - Set the NODE_ENV on server's .env to PRODUCTION 
 - Use Caddy for https server
 - Proxy it to port 7000 where your express app will be running.
+## Deploy it on ECS
+- Create a DynamoDB table and indexes (Refer to ./src/database/db_table.ts)
+- Create a S3 bucket
+- Create .env with Session Secret, Google Client Token, Google Client Secret
+- Upload that .env to S3
+- Go to tf/dev and fill in the \<FILL>
+- run `terraform init` and `terraform apply`
